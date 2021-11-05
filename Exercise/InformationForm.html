@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inforamtion Form</title>
+</head>
+<style>
+    h2 {
+        text-align: center;
+    }
+    table{
+        width: 350px;
+        height: 200px;
+        border: 1px solid;
+        padding: 10px;
+    }
+    table, td, th, tr   {
+        border-collapse: collapse;
+    }
+    .col1{
+        color: blue;
+        text-align: left;
+    }
+</style>
+<body>
+<h2>
+    BIỂU MẪU ĐĂNG KÝ
+</h2>
+<form action="send">
+    <table>
+        <tr>
+            <td class="col1"><label for="ten">Họ và tên</label></td>
+            <td><input type="text" id="ten" placeholder="Trần Anh Hào"></td>
+        </tr>
+        <tr>
+            <td class="col1"><label for="tuoi">Tuổi</label></td>
+            <td>
+                <select name="tuoi" id="tuoi">
+                    <option value="be"> <10 tuổi</option>
+                    <option value="be"> 10-20 tuổi</option>
+                    <option value="be"> 20-40 tuổi</option>
+                    <option value="be"> >40 tuổi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1"><label for="nam">Giới tính</label></td>
+            <td>
+                <input type="radio" name="gioitinh" value="Nam" checked> Nam
+                <input type="radio" name="gioitinh" value="Nữ"> Nữ
+                <input type="radio" name="gioitinh" value="Khác"> Khác
+            </td>
+        </tr>
+        <tr>
+            <td class="col1"><label for="sdt"> Số điện thoại</label></td>
+            <td><input type="text" id="sdt" size="15" placeholder="0123456789"></td>
+        </tr>
+        <tr>
+            <td class="col1"><label for="email">Email</label></td>
+            <td><input type="email"id="email" size="15" placeholder="xxx@gmail.com"></td>
+        </tr>
+        <tr>
+            <td class="col1"><label for="diachi">Địa chỉ</label></td>
+            <td><input type="text" id="diachi" placeholder="Địa chỉ"></td>
+        </tr>
+        <tr>
+            <td class="col1"><label for="acc">Account</label></td>
+            <td><input type="text" id="acc" size="20" placeholder="Đăng ký account"></td>
+        </tr>
+        <tr>
+            <td class="col1"><label for="pass">Password</label></td>
+            <td><input type="password" id="pass" size="20" placeholder="Nhập password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Gửi đi">
+                <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+        
+    </table>
+</form>
+</body>
+</html>
